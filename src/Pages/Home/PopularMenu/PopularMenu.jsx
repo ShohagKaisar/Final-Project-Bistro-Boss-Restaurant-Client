@@ -28,6 +28,7 @@ const PopularMenu = () => {
           menu.map(item => <MenuItem key={item._id} item={item}></MenuItem>)
         }
       </div>
+      {/* <button className="border-b-4 border-white rounded-b-lg px-4 py-2 hover:bg-white hover:text-black hover:rounded-t-lg hover:font-bold">Order Now</button> */}
     </>
   );
 };
