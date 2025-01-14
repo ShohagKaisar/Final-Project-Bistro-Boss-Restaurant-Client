@@ -20,13 +20,13 @@ const Navbar = () => {
     <li><Link to={"/menu"}>Our Menu</Link></li>
     <li><Link to={"/order/salad"}>Orde Food</Link></li>
     <li><Link to={"/secret"}>Secret</Link></li>
-    <li><Link to={'/'}><button className="btn">
+    <li><Link to={'/dashboard/cart'}><button className="btn">
       <PiShoppingCartBold></PiShoppingCartBold>
-      <div className="badge badge-secondary">+{ cart.length}</div>
+      <div className="badge badge-secondary">+{cart.length}</div>
     </button></Link></li>
     {
       user ? <>
-        {/* <span>{user?.displayName}</span> */}
+        <span>{user?.displayName}</span>
         <button onClick={handleLogOut} className="btn btn-ghost">Log Out</button></> : <><li><Link to={"/login"}>Login</Link></li></>
     }
   </>
